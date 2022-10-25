@@ -46,7 +46,7 @@ colors = ('b', 'g', 'r')
 for i, col in enumerate(colors):
 #   hist = cv.calcHist([img], [i], mask, [256], [0,256])
     hist = cv.calcHist([img], [i], mask, [256], [0,256])
-    plt.plot(hist, color=col)
+    plt.plot(hist, color=col) 
     plt.xlim(0, 256) 
 
 plt.show()
